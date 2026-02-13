@@ -1,3 +1,7 @@
+from pydub import AudioSegment
+
+AudioSegment.converter = "ffmpeg"
+AudioSegment.ffprobe   = "ffprobe"
 import streamlit as st
 import os
 from yt_dlp import YoutubeDL
